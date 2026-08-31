@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "口腔病历质检助手（本地测试版）",
+  "version": "0.7.0",
+  "description": "只读采集并扫描 e看牙 的病历质量、诊疗连续性、收费执行一致性及投诉合规风险。",
+  "permissions": ["activeTab", "tabs", "scripting", "storage"],
+  "host_permissions": ["http://127.0.0.1:8787/*", "https://bszyk.linkedcare.cn/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "病历页面探测",
+    "default_popup": "popup.html"
+  }
+}

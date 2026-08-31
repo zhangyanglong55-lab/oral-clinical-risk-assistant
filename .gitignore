@@ -1,0 +1,6 @@
+.env
+AI配置.txt
+node_modules/
+.DS_Store
+dist/
+*.log

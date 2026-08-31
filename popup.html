@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>口腔病历质检</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>口腔病历质检</h1>
+      <p>“病历质检”检查当前病历；“综合风险分析”采集电子病历及六个关联模块并集中进行AI复核。</p>
+      <button id="probe" type="button">病历质检</button>
+      <button id="autoCapture" type="button">综合风险分析</button>
+      <p id="status" role="status">只读运行；采集数据仅暂存在本次浏览器会话。</p>
+      <details class="api-settings">
+        <summary>DeepSeek API 设置</summary>
+        <label for="apiKey">API Key</label>
+        <input id="apiKey" type="password" autocomplete="off" placeholder="sk-…">
+        <div class="api-actions">
+          <button id="saveApiKey" type="button">保存API Key</button>
+          <button id="clearApiKey" type="button" class="secondary">清除</button>
+        </div>
+        <p id="apiStatus" role="status">Key仅保存在当前浏览器扩展的本地存储中。</p>
+      </details>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

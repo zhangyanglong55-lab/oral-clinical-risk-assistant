@@ -1,0 +1,98 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+body {
+  width: 300px;
+  margin: 0;
+  color: #25313c;
+  background: #f7fafc;
+}
+
+main {
+  padding: 18px;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 14px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 11px 12px;
+  color: white;
+  background: #0aa7c4;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button + button {
+  margin-top: 12px;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: wait;
+}
+
+#status {
+  margin: 12px 0 0;
+  color: #637381;
+}
+
+#status.error {
+  color: #b42318;
+}
+
+.api-settings {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #dce6ea;
+}
+
+.api-settings summary {
+  color: #087f98;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.api-settings label {
+  display: block;
+  margin: 12px 0 5px;
+  color: #536771;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.api-settings input {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid #c8dce3;
+  border-radius: 7px;
+  color: #25313c;
+  background: #fff;
+  font: inherit;
+}
+
+.api-actions {
+  display: grid;
+  grid-template-columns: 1fr 72px;
+  gap: 8px;
+  margin-top: 9px;
+}
+
+.api-actions button { margin-top: 0; padding: 8px; font-size: 12px; }
+.api-actions .secondary { color: #087f98; background: #fff; border: 1px solid #0aa7c4; }
+#apiStatus { margin: 8px 0 0; color: #70808c; font-size: 11px; line-height: 1.5; }
+#apiStatus.error { color: #b42318; }

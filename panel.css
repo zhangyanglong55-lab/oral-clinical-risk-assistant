@@ -1,0 +1,127 @@
+#dental-qc-probe-root {
+  all: initial;
+  position: fixed;
+  z-index: 2147483647;
+  top: 76px;
+  right: 16px;
+  width: min(390px, calc(100vw - 32px));
+  max-height: calc(100vh - 100px);
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid #c8dce3;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 42px rgba(26, 61, 74, .24);
+  color: #24343d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+#dental-qc-probe-root * { box-sizing: border-box; }
+
+#dental-qc-probe-root .dqp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  color: #fff;
+  background: #079fbd;
+}
+
+#dental-qc-probe-root .dqp-title { font-size: 16px; font-weight: 700; }
+#dental-qc-probe-root .dqp-subtitle { margin-top: 3px; font-size: 11px; opacity: .85; }
+#dental-qc-probe-root .dqp-close { border: 0; padding: 4px 7px; color: #fff; background: transparent; font-size: 22px; cursor: pointer; }
+#dental-qc-probe-root .dqp-body { max-height: calc(100vh - 180px); padding: 14px 16px 18px; overflow: auto; }
+#dental-qc-probe-root .dqp-notice { margin: 0 0 12px; padding: 9px 10px; border-radius: 7px; background: #eef9fb; color: #37616d; font-size: 12px; line-height: 1.5; }
+#dental-qc-probe-root .dqp-summary { margin: 0 0 12px; color: #536771; font-size: 13px; }
+#dental-qc-probe-root .dqp-section-title { margin: 16px 0 9px; color: #24343d; font-size: 14px; font-weight: 700; }
+#dental-qc-probe-root .dqp-counts { display: flex; gap: 6px; margin: 0 0 12px; }
+#dental-qc-probe-root .dqp-count { padding: 4px 8px; border-radius: 999px; background: #eef3f5; color: #536771; font-size: 11px; }
+#dental-qc-probe-root .dqp-count[data-level="严重"] { background: #fef0f0; color: #b42318; }
+#dental-qc-probe-root .dqp-count[data-level="一般"] { background: #fff6e5; color: #9a6700; }
+#dental-qc-probe-root .dqp-issue { margin: 0 0 9px; padding: 10px 11px; border: 1px solid #e2eaed; border-left-width: 4px; border-radius: 8px; background: #fff; }
+#dental-qc-probe-root .dqp-issue[data-level="严重"] { border-left-color: #d92d20; }
+#dental-qc-probe-root .dqp-issue[data-level="一般"] { border-left-color: #f59e0b; }
+#dental-qc-probe-root .dqp-issue[data-level="提示"] { border-left-color: #0aa7c4; }
+#dental-qc-probe-root .dqp-issue-head { display: flex; align-items: center; gap: 7px; margin-bottom: 5px; }
+#dental-qc-probe-root .dqp-level { color: #536771; font-size: 11px; font-weight: 700; }
+#dental-qc-probe-root .dqp-issue-title { color: #263b44; font-size: 13px; font-weight: 700; }
+#dental-qc-probe-root .dqp-issue-text { color: #536771; font-size: 12px; line-height: 1.65; white-space: pre-wrap; }
+#dental-qc-probe-root .dqp-pass { padding: 12px; border-radius: 8px; background: #edf9f3; color: #176b45; font-size: 13px; }
+#dental-qc-probe-root details { margin-top: 15px; }
+#dental-qc-probe-root summary { color: #087f98; font-size: 13px; font-weight: 700; cursor: pointer; }
+#dental-qc-probe-root .dqp-fields { margin-top: 10px; }
+#dental-qc-probe-root .dqp-field { margin: 0 0 10px; padding: 10px 11px; border: 1px solid #e2eaed; border-radius: 8px; background: #fbfdfe; }
+#dental-qc-probe-root .dqp-label { margin-bottom: 5px; color: #087f98; font-size: 12px; font-weight: 700; }
+#dental-qc-probe-root .dqp-value { color: #283940; font-size: 13px; line-height: 1.55; white-space: pre-wrap; word-break: break-word; }
+#dental-qc-probe-root .dqp-empty { color: #9a3412; }
+#dental-qc-probe-root .dqp-warning { margin-top: 12px; padding: 10px; border-left: 3px solid #f59e0b; background: #fff8e8; color: #78520c; font-size: 12px; line-height: 1.55; }
+#dental-qc-probe-root .dqp-actions { display: flex; gap: 8px; margin-top: 14px; }
+#dental-qc-probe-root .dqp-button { flex: 1; border: 1px solid #079fbd; border-radius: 7px; padding: 8px; color: #087f98; background: #fff; font-size: 12px; cursor: pointer; }
+#dental-qc-probe-root .dqp-button.dqp-primary { color: #fff; background: #079fbd; }
+#dental-qc-probe-root .dqp-button:disabled { opacity: .55; cursor: wait; }
+#dental-qc-probe-root .dqp-ai-box { margin-top: 15px; padding-top: 2px; border-top: 1px dashed #bdd5dc; }
+#dental-qc-probe-root .dqp-ai-error { margin-top: 9px; padding: 10px; border-radius: 7px; background: #fef0f0; color: #a4261d; font-size: 12px; line-height: 1.55; }
+#dental-qc-probe-root .dqp-risk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 9px;
+}
+
+#dental-qc-probe-root .dqp-risk-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+#dental-qc-probe-root .dqp-risk-category { color: #087c91; background: #e8f8fb; }
+#dental-qc-probe-root .dqp-risk-certainty { color: #76520b; background: #fff5d9; }
+#dental-qc-probe-root .dqp-risk-level { color: #9f2918; background: #fff0ed; }
+
+#dental-qc-probe-root .dqp-risk-title {
+  margin-bottom: 12px;
+  color: #25313c;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 800;
+}
+
+#dental-qc-probe-root .dqp-risk-section {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 8px;
+  padding: 8px 0;
+  border-top: 1px solid #edf1f3;
+}
+
+#dental-qc-probe-root .dqp-risk-section-label {
+  color: #70808c;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#dental-qc-probe-root .dqp-risk-section-text {
+  color: #455865;
+  font-size: 14px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+#dental-qc-probe-root .dqp-risk-evidence .dqp-risk-section-text { color: #087c91; font-weight: 700; }
+
+#dental-qc-probe-root .dqp-risk-confirm {
+  margin-top: 4px;
+  padding: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: #fff8e8;
+}
+
+@media (max-width: 520px) {
+  #dental-qc-probe-root .dqp-risk-section { grid-template-columns: 1fr; gap: 3px; }
+}

@@ -1,0 +1,6 @@
+# 首次使用时复制本文件并改名为“AI配置.txt”。
+# 在等号后填写你自己的 DeepSeek API Key，然后保存。
+# 不要把填写后的“AI配置.txt”发给他人。
+DEEPSEEK_API_KEY=请填写你的DeepSeek_API_Key
+DEEPSEEK_MODEL=deepseek-v4-flash
+DENTAL_QC_PORT=8787
